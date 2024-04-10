@@ -1,0 +1,9 @@
+openai
+pandas
+numpy
+psycopg2
+python-dotenv
+langchain
+langchain-openai
+fastapi
+uvicorn[standard]

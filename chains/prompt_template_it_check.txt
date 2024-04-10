@@ -1,0 +1,9 @@
+Given the user question below, check if it is an IT related question and classify as YES or NO. 
+        Respond only with YES if it is IT related and NO if it is not IT related.
+Do not respond with more than one word.
+
+<question>
+{question}
+</question>
+
+Classification:
