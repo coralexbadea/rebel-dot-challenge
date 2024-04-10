@@ -5,7 +5,7 @@ from langchain_core.runnables import RunnableLambda
 
 
 def _get_open_ai_chain():
-    with open('prompt_template_it_expert.txt', 'r') as file:
+    with open('chains/prompt_template_it_expert.txt', 'r') as file:
         prompt_template_it_expert = file.read()
     openai_chain = (PromptTemplate.from_template(prompt_template_it_expert) 
                     | ChatOpenAI(model="gpt-3.5-turbo-1106")
@@ -14,7 +14,7 @@ def _get_open_ai_chain():
 
 
 def _get_it_check_chain():
-    with open('prompt_template_it_check.txt', 'r') as file:
+    with open('chains/prompt_template_it_check.txt', 'r') as file:
         prompt_template_it_check = file.read()
     it_check_chain = (
         PromptTemplate.from_template(prompt_template_it_check)

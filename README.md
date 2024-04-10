@@ -37,3 +37,14 @@ Try those 3 scenarios:
 	"user_question": "What is 2+2?"
 }
 ```
+
+
+##Alternatively you can run using Docker
+Set your OpenAI key inside Docker-compose.yml
+```
+docker-compose build
+```
+```
+docker-compose up -d
+```
+use ```<your-local-IP>:8000/ask-question```
