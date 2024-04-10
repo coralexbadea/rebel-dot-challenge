@@ -39,7 +39,7 @@ Try those 3 scenarios:
 ```
 
 
-##Alternatively you can run using Docker
+## Alternatively you can run using Docker
 Set your OpenAI key inside Docker-compose.yml
 ```
 docker-compose build
