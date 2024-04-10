@@ -54,6 +54,7 @@ async def answer(request: Question, token: str = Depends(get_token)):
         "answer": ""
     }
     try:
+        # retrieve function, we could use cosine_similarity as separate function, but it is already build-in 
         docs = retriever.get_relevant_documents(query)
         if len(docs):
             document = docs[0]
